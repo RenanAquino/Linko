@@ -22,7 +22,7 @@ public class AuthServiceImpl implements AuthService {
     @Override
     public void register(RegisterDTO data) {
         authClient.register(data);
-        MailDTO authMailDTO = new MailDTO(data.email(), "Olá, " + data.username() + "! Bem-vindo à FriendNet", "Sua conta foi criada com sucesso!");
+        MailDTO authMailDTO = new MailDTO(data.email(), "Sua conta foi criada com sucesso!", "Olá, " + data.username() + "! Bem-vindo à FriendNet");
         kafkaAuthProducerMessage.sendmail(authMailDTO);
     }
 

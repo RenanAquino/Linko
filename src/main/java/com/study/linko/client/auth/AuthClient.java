@@ -1,4 +1,4 @@
-package com.study.friendnet.client.auth;
+package com.study.linko.client.auth;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
@@ -7,8 +7,8 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-import com.study.friendnet.dto.auth.LoginDTO;
-import com.study.friendnet.dto.auth.RegisterDTO;
+import com.study.linko.dto.auth.LoginDTO;
+import com.study.linko.dto.auth.RegisterDTO;
 
 @Component
 public class AuthClient {
@@ -16,7 +16,7 @@ public class AuthClient {
     @Autowired
     RestTemplate restTemplate;
 
-    private final String REGISTER_URI = "http://localhost:8081/auth/register";
+    private final String REGISTER_URI = "http://localhost:8081/user/register";
     private final String LOGIN_URI = "http://localhost:8081/auth/login";
 
     public void register(RegisterDTO data) {

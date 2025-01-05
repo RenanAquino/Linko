@@ -1,9 +1,9 @@
-package com.study.friendnet.message.mail;
+package com.study.linko.message.mail;
 
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 
-import com.study.friendnet.dto.MailDTO;
+import com.study.linko.dto.MailDTO;
 
 
 @Component

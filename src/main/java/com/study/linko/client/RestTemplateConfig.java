@@ -1,4 +1,4 @@
-package com.study.friendnet.client;
+package com.study.linko.client;
 
 import java.time.Duration;
 

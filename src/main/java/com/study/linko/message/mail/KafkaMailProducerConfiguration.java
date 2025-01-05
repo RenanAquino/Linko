@@ -1,4 +1,4 @@
-package com.study.friendnet.message.mail;
+package com.study.linko.message.mail;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -9,7 +9,7 @@ import org.springframework.kafka.core.DefaultKafkaProducerFactory;
 import org.springframework.kafka.support.serializer.JsonSerializer;
 import org.springframework.stereotype.Component;
 
-import com.study.friendnet.dto.MailDTO;
+import com.study.linko.dto.MailDTO;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,13 +1,13 @@
-package com.study.friendnet;
+package com.study.linko;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FriendnetApplication {
+public class LinkoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FriendnetApplication.class, args);
+		SpringApplication.run(LinkoApplication.class, args);
 	}
 
 }

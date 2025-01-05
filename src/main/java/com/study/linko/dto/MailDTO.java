@@ -1,6 +1,6 @@
-package com.study.friendnet.dto.auth;
+package com.study.linko.dto;
 
-public record AuthMailDTO(
+public record MailDTO(
     String email,
     String subject,
     String message

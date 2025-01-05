@@ -1,12 +1,9 @@
-package com.study.friendnet.dto.auth;
+package com.study.linko.dto.auth;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
-public record RegisterDTO(
-    @NotNull
-    @NotBlank
-    String username,
+public record LoginDTO(
     @NotNull
     @NotBlank
     String email,

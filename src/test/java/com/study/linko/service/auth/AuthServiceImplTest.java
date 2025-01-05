@@ -1,10 +1,10 @@
-package com.study.friendnet.service.auth;
+package com.study.linko.service.auth;
 
-import com.study.friendnet.client.auth.AuthClient;
-import com.study.friendnet.dto.MailDTO;
-import com.study.friendnet.dto.auth.LoginDTO;
-import com.study.friendnet.dto.auth.RegisterDTO;
-import com.study.friendnet.message.mail.KafkaMailProducerMessage;
+import com.study.linko.client.auth.AuthClient;
+import com.study.linko.dto.MailDTO;
+import com.study.linko.dto.auth.LoginDTO;
+import com.study.linko.dto.auth.RegisterDTO;
+import com.study.linko.message.mail.KafkaMailProducerMessage;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -33,7 +33,7 @@ class AuthServiceImplTest {
     @Test
     void testRegister() {
         RegisterDTO registerDTO = new RegisterDTO("user", "user@example.com", "password");
-        MailDTO expectedAuthMailDTO = new MailDTO("user@example.com", "Olá, " + registerDTO.username() + "! Bem-vindo à FriendNet", "Sua conta foi criada com sucesso!");
+        MailDTO expectedAuthMailDTO = new MailDTO("user@example.com", "Olá, " + registerDTO.username() + "! Bem-vindo à linko", "Sua conta foi criada com sucesso!");
 
         authService.register(registerDTO);
 

@@ -1,4 +1,4 @@
-package com.study.friendnet.controller.auth;
+package com.study.linko.controller.auth;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.study.friendnet.dto.auth.LoginDTO;
-import com.study.friendnet.dto.auth.RegisterDTO;
-import com.study.friendnet.service.auth.AuthService;
+import com.study.linko.dto.auth.LoginDTO;
+import com.study.linko.dto.auth.RegisterDTO;
+import com.study.linko.service.auth.AuthService;
 
 @RestController
 @RequestMapping("/auth")

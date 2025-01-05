@@ -1,4 +1,4 @@
-package com.study.friendnet.client.auth;
+package com.study.linko.client.auth;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
@@ -14,8 +14,8 @@ import org.mockito.MockitoAnnotations;
 import org.springframework.http.HttpEntity;
 import org.springframework.web.client.RestTemplate;
 
-import com.study.friendnet.dto.auth.LoginDTO;
-import com.study.friendnet.dto.auth.RegisterDTO;
+import com.study.linko.dto.auth.LoginDTO;
+import com.study.linko.dto.auth.RegisterDTO;
 
 public class AuthClientTest {
 

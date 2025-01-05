@@ -1,10 +1,10 @@
-package com.study.friendnet;
+package com.study.linko;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FriendnetApplicationTests {
+class LinkoApplicationTests {
 
 	@Test
 	void contextLoads() {
